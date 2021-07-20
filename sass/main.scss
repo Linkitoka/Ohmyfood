@@ -1,8 +1,13 @@
-body{
-    background-color: red;
-}
+@import 'libs/__base';
+@import 'libs/_functions';
+@import 'libs/_layout';
+@import 'libs/_mixins';
+@import 'libs/_utils';
+
+
+
 p {
-    font-size: 200px;
-    color: black;
+    
+    color: $color-primary;
 
 }
