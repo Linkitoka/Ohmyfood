@@ -1,13 +1,59 @@
 @import 'libs/__base';
-@import 'libs/_functions';
-@import 'libs/_layout';
-@import 'libs/_mixins';
-@import 'libs/_utils';
+@import 'libs/__functions';
+@import 'libs/__layout';
+@import 'libs/__mixins';
+@import 'libs/__utils';
 
-
-
-p {
+#bloc-page-web{
+    margin: 0;
+    padding: 0;
+}
+#logo {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
     
-    color: $color-primary;
+        & img{
+            width: 45%;
+        }
+}
+.fa-map-marker-alt{
+    margin: 10px;
+}
+.strip{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+        &__loca {
+            font-family: "roboto-regular",sans-serif;
+            text-align: center;
+            background-color: darken($color-white, 10%);
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: inset 0px 2px 3px  darken($color-white, 20%);
+        }
+       
+        &__indication{
+            font-family: "roboto-light", sans-serif;
+            text-align: center;
+            background-color: darken($color-white, 5%);
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            p{
+                padding-top: 0px;
+            }
+        }
+        
 
 }
+
