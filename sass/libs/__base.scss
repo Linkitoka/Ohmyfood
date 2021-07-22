@@ -23,15 +23,23 @@
     font-style: normal;
 }
 @font-face {
+    font-family: "roboto-medium" ;
+    src: url("statics/Roboto-Medium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: "shrinkhand" ;
     src: url("statics/Shrikhand-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
+
 $color-primary : #9356DC ;
 $color-secondary : #FF79DA;
 $color-tertiary : #99E2D0;
 $color-white : #FFF;
+
 body, #bloc-page {
     margin: 0;
     max-width: 800px;
@@ -42,6 +50,7 @@ body, #bloc-page {
 }
 #bloc-page{
     box-sizing: content-box;
+    padding: 10px;
 }
 body a {
     color: black;
@@ -50,5 +59,15 @@ body a {
 h1,h2,h3 {
     font-size: 1.4rem;
     margin-bottom: 0;
-    
+    font-family: 'roboto-medium', sans-serif;
+
+}
+.fas{
+    margin-right: 20px;
+    margin-left: 10px;
+    color: darken($color-white, 75%);
+}
+nav {
+    height: 400px;
+
 }

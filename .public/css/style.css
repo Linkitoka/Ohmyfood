@@ -23,6 +23,12 @@
   font-style: normal;
 }
 @font-face {
+  font-family: "roboto-medium";
+  src: url("statics/Roboto-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "shrinkhand";
   src: url("statics/Shrikhand-Regular.ttf") format("truetype");
   font-weight: normal;
@@ -38,6 +44,7 @@ body, #bloc-page {
 
 #bloc-page {
   box-sizing: content-box;
+  padding: 10px;
 }
 
 body a {
@@ -48,6 +55,17 @@ body a {
 h1, h2, h3 {
   font-size: 1.4rem;
   margin-bottom: 0;
+  font-family: "roboto-medium", sans-serif;
+}
+
+.fas {
+  margin-right: 20px;
+  margin-left: 10px;
+  color: #404040;
+}
+
+nav {
+  height: 400px;
 }
 
 header h1 {
@@ -73,10 +91,6 @@ header h1 {
   width: 45%;
 }
 
-.fa-map-marker-alt {
-  margin: 10px;
-}
-
 .strip {
   margin: 0;
   padding: 0;
@@ -96,14 +110,65 @@ header h1 {
   font-family: "roboto-light", sans-serif;
   text-align: center;
   background-color: #f2f2f2;
-  height: 300px;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 .strip__indication p {
-  padding-top: 0px;
+  color: #404040;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  font-family: "roboto-regular", sans-serif;
+  font-size: 100%;
+  color: #FFF;
+  padding: 15px;
+  width: 220px;
+  border: none;
+  border-radius: 40px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 3px 3px 10px 2px #b3b3b3;
+}
+
+ul {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 50px;
+}
+ul .fa-store {
+  color: #9356DC;
+}
+ul .one {
+  filter: invert(43%) sepia(39%) saturate(4338%) hue-rotate(241deg) brightness(90%) contrast(91%);
+  margin-left: -65px;
+}
+ul .two {
+  filter: invert(43%) sepia(39%) saturate(4338%) hue-rotate(241deg) brightness(90%) contrast(91%);
+  margin-left: -65px;
+}
+ul .tree {
+  filter: invert(43%) sepia(39%) saturate(4338%) hue-rotate(241deg) brightness(90%) contrast(91%);
+  margin-left: -65px;
+}
+
+li {
+  font-family: "roboto-bold", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  border: 1px solid transparent;
+  border-radius: 18px;
+  width: 90%;
+  height: 60px;
+}
+li:last-child {
+  background-color: #ffd0f2;
 }
 
 /*# sourceMappingURL=style.css.map */

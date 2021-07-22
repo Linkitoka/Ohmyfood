@@ -1,0 +1,8 @@
+@mixin shadow-box {
+
+    box-shadow: 3px 3px 10px 2px darken($color-white, 30%)
+}
+@mixin list-number {
+    filter: invert(43%) sepia(39%) saturate(4338%) hue-rotate(241deg) brightness(90%) contrast(91%);
+    margin-left: -65px;
+}
