@@ -40,6 +40,8 @@ $color-secondary : #FF79DA;
 $color-tertiary : #99E2D0;
 $color-white : #FFF;
 
+
+
 body, #bloc-page {
     margin: 0;
     max-width: 800px;
@@ -50,7 +52,7 @@ body, #bloc-page {
 }
 #bloc-page{
     box-sizing: content-box;
-    padding: 10px;
+    padding: 0;
 }
 body a {
     color: black;
@@ -62,11 +64,12 @@ h1,h2,h3 {
     font-family: 'roboto-medium', sans-serif;
 
 }
-.fas{
+.far, .fas{
     margin-right: 20px;
     margin-left: 10px;
     color: darken($color-white, 75%);
 }
+
 nav {
     height: 400px;
 
