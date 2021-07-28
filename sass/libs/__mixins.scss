@@ -6,14 +6,21 @@
     filter: invert(43%) sepia(39%) saturate(4338%) hue-rotate(241deg) brightness(90%) contrast(91%);
     margin-left: -95px;
 }
-
+@mixin color-heart {
+    font-weight: 900;
+    display: flex;
+    background: -webkit-linear-gradient($color-primary, $color-secondary);
+    -webkit-text-fill-color: transparent;
+}
 @mixin hover {
     &:hover{
-        font-weight: 900;
-        display: flex;
-        background: -webkit-linear-gradient($color-primary, $color-secondary);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @include color-heart;
     }
     
+}
+@mixin visited{
+    &:visited{
+        @include color-heart;
+
+    }
 }

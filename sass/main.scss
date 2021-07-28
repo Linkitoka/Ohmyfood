@@ -4,171 +4,176 @@
 @import 'libs/__mixins';
 @import 'libs/__utils';
 
-#bloc-page-web{
-    margin: 0;
-    padding: 0;
-}
-#logo {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    
-        & img{
-            width: 45%;
-        }
-}
-
-.strip{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-        &__loca {
-            font-family: "roboto-regular",sans-serif;
-            text-align: center;
-            background-color: darken($color-white, 10%);
-            height: 45px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: inset 0px 2px 3px  darken($color-white, 20%);
-        }
-       
-        &__indication{
-            font-family: "roboto-light", sans-serif;
-            text-align: center;
-            background-color: darken($color-white, 5%);
-            height: 250px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-                & p{
-                    color: darken($color-white, 75%);
-                    margin-top: 5px;
-                    margin-bottom: 25px;
-                } 
-                
-        }
-        
-
-}
-.btn {
-    font-family: 'roboto-regular', sans-serif;
-    font-size: 100%;
-    color: $color-white;
-    padding: 15px;
-    width: 220px;
-    border: none;
-    border-radius: 40px;
-    background: linear-gradient($color-secondary,$color-primary);
-        @include shadow-box;
-}
-ul{
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: auto;
-    gap: 50px;
-    
-        & .fa-store{
-             color: $color-primary;
-        }
-        & .one{
-            @include list-number;
-            
-        }
-        & .two{
-            @extend .one;
-            
-        }
-        & .tree{
-            @extend .one;
-        }
-        li{
-            font-family: 'roboto-bold', sans-serif;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: darken($color-white, 5%);
-            border: 1px solid transparent;
-            border-radius: 18px;
-            width: 90%;
-            height: 60px;
-                &:last-child{
-                    background-color: lighten($color-primary, 33%);
-                }
-                @include shadow-box;
-            
-        }
-}
-section{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    background-color: darken($color-white, 10%)
-}
-.frame {
-    display: grid;
-    grid-template-columns: auto;
-    gap: 5px;
-    margin: 10px;
-    padding: 20px;
-
-    &__meal{
-        display: flex;
-        flex-direction: column;
-        width: 280px;
-        height: 200px;
-        border: 6px solid transparent;
-        
+@media screen and (max-width: 415px){
+    #bloc-page-web{
+        margin: 0;
+        padding: 0;
     }
-    & img{
-        position: relative;
+    #logo {
+        margin: 0;
+        padding: 0;
         width: 100%;
-        height: 80%;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        object-fit: cover;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        
+            & img{
+                width: 45%;
+            }
+    }
+
+    .strip{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+            &__loca {
+                font-family: "roboto-regular",sans-serif;
+                text-align: center;
+                background-color: darken($color-white, 10%);
+                height: 45px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: inset 0px 2px 3px  darken($color-white, 20%);
+            }
+        
+            &__indication{
+                font-family: "roboto-light", sans-serif;
+                text-align: center;
+                background-color: darken($color-white, 5%);
+                height: 250px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                    & p{
+                        color: darken($color-white, 75%);
+                        margin-top: 5px;
+                        margin-bottom: 25px;
+                    } 
+                    
+            }
+            
+
+    }
+    .btn {
+        font-family: 'roboto-regular', sans-serif;
+        font-size: 100%;
+        color: $color-white;
+        padding: 15px;
+        width: 220px;
+        border: none;
+        border-radius: 40px;
+        background: linear-gradient($color-secondary,$color-primary);
+            @include shadow-box;
+    }
+    ul{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 50px;
+        
+            & .fa-store{
+                color: $color-primary;
+            }
+            & .one{
+                @include list-number;
+                
+            }
+            & .two{
+                @extend .one;
+                
+            }
+            & .tree{
+                @extend .one;
+            }
+            li{
+                font-family: 'roboto-bold', sans-serif;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: darken($color-white, 5%);
+                border: 1px solid transparent;
+                border-radius: 18px;
+                width: 90%;
+                height: 60px;
+                    &:last-child{
+                        background-color: lighten($color-primary, 33%);
+                    }
+                    @include shadow-box;
+                
+            }
+    }
+    section {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: darken($color-white, 10%)
+    }
+    .frame {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 5px;
+        margin: 10px;
+        padding: 20px;
+
+        &__meal{
+            display: flex;
+            flex-direction: column;
+            width: 280px;
+            height: 200px;
+            border: 6px solid transparent;
+            
+        }
+        & img{
+            position: relative;
+            width: 100%;
+            height: 80%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            object-fit: cover;
+        }
+    }
+    .banner-meal{
+        padding-bottom: 15px;
+        font-size: 15px;
+        padding-top: 0;
+        margin-top: 0;
+        display: flex;
+        flex-direction:column;
+        width: 280px;
+        height: 25%;
+        background-color: $color-white;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        font-family: 'roboto-light',sans-serif;
+        @include shadow-box; 
+            &__name-restaurant{
+            font-family: 'roboto-bold',sans-serif;
+            padding-left: 15px;
+            padding-top: 15px;
+            }
+            
+            & p{
+            font-family: 'roboto-light',sans-serif;
+            margin: 0; 
+            padding-top: 5px;
+            padding-left: 15px;  
+            }
+            & .fa-heart{
+                position: absolute;
+                right: 20px;
+                width: 20px;
+                padding-right: 50px;
+                padding-top: 20px;
+                @include hover;
+                
+            }
+            & a{
+                @include visited;
+            }   
     }
 }
-.banner-meal{
-    padding-bottom: 15px;
-    font-size: 15px;
-    padding-top: 0;
-    margin-top: 0;
-    display: flex;
-    flex-direction:column;
-    width: 280px;
-    height: 25%;
-    background-color: $color-white;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    font-family: 'roboto-light',sans-serif;
-    @include shadow-box; 
-        &__name-restaurant{
-        font-family: 'roboto-bold',sans-serif;
-        padding-left: 15px;
-        padding-top: 15px;
-        }
-        
-        & p{
-        font-family: 'roboto-light',sans-serif;
-        margin: 0; 
-        padding-top: 5px;
-        padding-left: 15px;  
-        }
-        & .fa-heart{
-            position: absolute;
-            right: 20px;
-            width: 20px;
-            padding-right: 50px;
-            padding-top: 20px;
-              @include hover;
-        }   
-}
-
 
