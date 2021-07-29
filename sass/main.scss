@@ -113,7 +113,7 @@ section {
 }
 .frame {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-rows: auto;
     gap: 5px;
     margin: 10px;
     padding: 20px;
@@ -162,7 +162,7 @@ section {
         padding-left: 15px;  
         }
         & .fa-heart{
-            position: absolute;
+            position: relative;
             right: 20px;
             width: 20px;
             padding-right: 50px;
@@ -174,6 +174,7 @@ section {
             @include visited;
         }   
 }
+
 @media screen and (max-width: 415px){
     @import 'libs/_base-responsive';
     #bloc-page-web{

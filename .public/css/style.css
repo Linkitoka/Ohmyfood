@@ -35,8 +35,9 @@
   font-style: normal;
 }
 body, #bloc-page {
-  margin: 0;
-  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1400px;
   min-width: 450px;
   font-family: "roboto-regular", sans-serif;
   color: black;
@@ -52,10 +53,16 @@ body a {
   text-decoration: none;
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-size: 1.4rem;
   margin-bottom: 0;
   font-family: "roboto-medium", sans-serif;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0;
+  font-family: "shrinkhand", sans-serif;
 }
 
 .far, .fas {
@@ -172,7 +179,7 @@ section {
 
 .frame {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-rows: auto;
   gap: 5px;
   margin: 10px;
   padding: 20px;
@@ -220,7 +227,7 @@ section {
   padding-left: 15px;
 }
 .banner-meal .fa-heart {
-  position: absolute;
+  position: relative;
   right: 20px;
   width: 20px;
   padding-right: 50px;
