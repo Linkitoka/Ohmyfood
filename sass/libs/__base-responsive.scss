@@ -4,6 +4,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {@font-face {
+    font-family: "roboto-regular" ;
+    src: url("statics/Roboto-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
 @font-face {
     font-family: "roboto-thin" ;
     src: url("statics/Roboto-Thin.ttf") format("truetype");
@@ -79,3 +85,4 @@ nav {
     height: 400px;
 
 }
+ 
