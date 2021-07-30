@@ -4,7 +4,7 @@
 }
 @mixin list-number {
     filter: invert(43%) sepia(39%) saturate(4338%) hue-rotate(241deg) brightness(90%) contrast(91%);
-    margin-left: -95px;
+    margin-left: -80px;
 }
 @mixin color-heart {
     font-weight: 900;
@@ -19,6 +19,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: 900;
+        padding: 2px;
     }
     
 }
