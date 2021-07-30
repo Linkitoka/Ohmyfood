@@ -176,6 +176,7 @@ ul {
   ul {
     display: grid;
     grid-template-columns: auto;
+    padding-left: 50px;
   }
 }
 ul .fa-store {
