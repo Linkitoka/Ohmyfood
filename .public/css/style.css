@@ -209,10 +209,12 @@ section {
 }
 
 .frame {
-  display: flex;
-  margin: 10px;
-  margin-bottom: 0;
-  padding: 20px;
+  display: grid;
+  padding-bottom: 20px;
+  grid-template-columns: auto auto;
+  align-content: center;
+  justify-content: center;
+  gap: 55px;
 }
 @media screen and (max-width: 400px) {
   .frame {
@@ -303,15 +305,7 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
-@media screen and (max-width: 400px) {
-  section {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    background-color: #e6e6e6;
-  }
-}
-section .strip__footer {
+.strip__footer {
   background: #353535;
   color: #FFF;
   display: flex;
@@ -320,37 +314,40 @@ section .strip__footer {
   height: 100px;
 }
 @media screen and (max-width: 400px) {
-  section .strip__footer {
+  .strip__footer {
     height: 150px;
   }
 }
-section .strip__footer h3 {
+.strip__footer h3 {
   text-align: center;
   width: 100%;
 }
-section .strip__footer ol {
+.strip__footer ol {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 @media screen and (max-width: 400px) {
-  section .strip__footer ol {
+  .strip__footer ol {
     display: flex;
     flex-direction: column;
   }
 }
-section .strip__footer li {
+.strip__footer li {
   display: block;
   float: left;
   list-style: none;
 }
-section .strip__footer .fas {
+.strip__footer .fas {
   color: #FFF;
 }
-section .strip__footer a {
+.strip__footer a {
   color: #FFF;
   padding-right: 60px;
-  padding-left: 60px;
+  padding-left: 50px;
+}
+.strip__footer a:hover {
+  color: #99E2D0;
 }
 
 /*# sourceMappingURL=style.css.map */

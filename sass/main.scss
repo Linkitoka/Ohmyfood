@@ -117,13 +117,16 @@ section {
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: darken($color-white, 10%)
+    background-color: darken($color-white, 10%);
+    
 }
 .frame {
-    display: flex;
-    margin: 10px;
-    margin-bottom: 0;
-    padding: 20px;
+    display: grid;
+    padding-bottom: 20px;
+    grid-template-columns: auto auto;
+    align-content: center;
+    justify-content: center;
+    gap: 55px;
     @media screen and (max-width: 400px){
         display: grid;
         grid-template-columns: auto;
@@ -199,15 +202,7 @@ section {
             @include visited;
         }   
 }
-section{
-    @media screen and (max-width: 400px){
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        background-color: darken($color-white, 10%);
-    }
-
-        .strip__footer{
+.strip__footer{
             background: #353535;
             color: $color-white;
             display: flex;
@@ -226,24 +221,29 @@ section{
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    @media screen and (max-width: 400px){
-                        display: flex;
-                        flex-direction: column;
-                    }
+                         @media screen and (max-width: 400px){
+                            display: flex;
+                            flex-direction: column;
+                            }
                 }
                 & li{
                     display: block;
                     float: left;
                     list-style: none;
+                    
                 }
                 & .fas{
                     color: $color-white;
+                    
                 }
                 & a{
                     color: $color-white;
                     padding-right: 60px;
-                    padding-left: 60px;
-                    
+                    padding-left: 50px;
+                    &:hover{
+                        color: $color-tertiary;
+                        
+                    }
                 }
-        }
+                
 }
