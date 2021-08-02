@@ -125,6 +125,7 @@ section {
     padding-top: 30px;
     
 }
+
 .frame {
     display: grid;
     padding-bottom: 20px;
@@ -159,6 +160,25 @@ section {
         object-fit: cover;
     }
 }
+.new-meal {
+    position: absolute;
+    background-color: $color-tertiary;
+    width: 80px;
+    height: 25px;
+    color: darken($color-tertiary, 40%);
+    border-radius: 3px;
+    margin-left: 255px;
+    margin-top: 20px;
+        & p{
+            text-align: center;
+            margin: 0;
+            padding-top: 2px;
+        }
+        @media screen and (max-width: 400px){
+        margin-left: 200px;
+    }
+}
+
 .banner-meal{
     padding-bottom: 15px;
     font-size: 15px;
@@ -214,6 +234,7 @@ section {
             @include visited;
         }   
 }
+
 .strip__footer{
             background: #353535;
             color: $color-white;
