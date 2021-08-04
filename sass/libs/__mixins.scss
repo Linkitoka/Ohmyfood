@@ -23,8 +23,8 @@
     }
     
 }
-@mixin visited{
-    &:visited{
+@mixin active{
+    &:active{
         @include color-heart;
 
     }
