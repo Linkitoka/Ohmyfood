@@ -324,18 +324,14 @@ section {
   }
 }
 .banner-meal .fa-heart:hover {
+  color: #FF79DA;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
   padding: 2px;
-}
-.banner-meal .far:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 900;
-  padding: 2px;
+  transition: 1.5s;
+  -webkit-transition: 1.5s;
 }
 .banner-meal a:active {
   font-weight: 900;

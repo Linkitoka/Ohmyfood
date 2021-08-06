@@ -229,9 +229,7 @@ section {
             }
            @include hover;
         }
-        & .far{
-            @include hover;
-        }
+        
         & a{
             @include active;
         }   
