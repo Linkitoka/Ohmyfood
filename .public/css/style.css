@@ -526,11 +526,14 @@ section {
   }
 }
 
+#menu1 {
+  animation: opacity 1s both;
+}
+
 .menu {
   display: grid;
   gap: 20px;
   justify-items: center;
-  cursor: pointer;
   z-index: 2;
 }
 @media screen and (max-width: 415px) {
@@ -540,9 +543,11 @@ section {
   }
 }
 .menu__card {
+  position: relative;
   display: grid;
   grid-template-columns: 10fr 1fr;
   grid-template-rows: 1fr;
+  cursor: pointer;
   width: 75%;
   height: 50px;
   padding: 10px;
@@ -557,15 +562,16 @@ section {
     width: 85%;
   }
 }
+.menu__card:hover b {
+  padding-right: 75px;
+  transition: 0.5s ease;
+}
 .menu .slide-left {
   width: 75px;
-  height: 50px;
+  height: 100%;
   background-color: #99E2D0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 0;
-  z-index: 0;
+  position: absolute;
+  right: 0px;
 }
 .menu .slide-left .fa-check-circle {
   color: #FFF;
