@@ -333,12 +333,6 @@ section {
   transition: 1.5s;
   -webkit-transition: 1.5s;
 }
-.banner-meal a:active {
-  font-weight: 900;
-  display: flex;
-  background: -webkit-linear-gradient(#9356DC, #FF79DA);
-  -webkit-text-fill-color: transparent;
-}
 
 .strip__footer {
   background: #353535;
@@ -536,6 +530,8 @@ section {
   display: grid;
   gap: 20px;
   justify-items: center;
+  cursor: pointer;
+  z-index: 2;
 }
 @media screen and (max-width: 415px) {
   .menu {
@@ -560,6 +556,23 @@ section {
   .menu__card {
     width: 85%;
   }
+}
+.menu .slide-left {
+  width: 75px;
+  height: 50px;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  z-index: 0;
+}
+.menu .slide-left .fa-check-circle {
+  color: #FFF;
+}
+.menu .slide-left .fas {
+  margin: auto;
+  padding: auto;
 }
 .menu strong {
   height: 18px;

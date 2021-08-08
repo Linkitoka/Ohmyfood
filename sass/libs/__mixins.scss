@@ -25,10 +25,5 @@
        }
     
 }
-@mixin active{
-    &:active{
-        @include color-heart;
 
-    }
-}
-
+  

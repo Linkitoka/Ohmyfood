@@ -229,10 +229,7 @@ section {
             }
            @include hover;
         }
-        
-        & a{
-            @include active;
-        }   
+          
 }
 
 .strip__footer{
@@ -411,6 +408,8 @@ section {
     display: grid;
     gap: 20px;
     justify-items: center;
+    cursor: pointer;
+    z-index: 2;
     @media screen and (max-width: 415px){
         padding-left: 0;
         justify-items: start;
@@ -431,7 +430,26 @@ section {
         @media screen and (max-width: 415px){
             width: 85%;
         }
-    
+    }
+    & .slide-left{
+        width: 75px;
+        height: 50px;
+        background-color:  $color-tertiary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 0;
+        
+        z-index: 0;
+            & .fa-check-circle{
+                
+                color :$color-white;
+               
+            }
+            & .fas {
+                margin: auto;
+                padding: auto;
+            }
     }
     & strong{
         height: 18px;
