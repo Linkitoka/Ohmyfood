@@ -435,24 +435,28 @@ section {
         @media screen and (max-width: 415px){
             width: 85%;
         }
+        
         &:hover{
+            
             b{
                 padding-right: 75px ;
-                transition: 0.5s ease,
+                transition: 0.5s ease-in-out,
             }
             & .slide-left{
                 display: flex;
                 align-items: center;
                 justify-items: center;
-                -webkit-animation: slide-left 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) 10ms both;
-                animation: slide-left 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) 10ms both;
+                -webkit-animation: slide-left 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) 50ms both;
+                animation: slide-left 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) 50ms both;
                 visibility: visible;
                 transition-duration: .5s;
+                    
+                    & .fas{
+                        -webkit-animation: rotate-90 0.8s ease-in-out both;
+	                    animation: rotate-90 0.8s ease-in-out both;
+                    }
             }
-            & .fas{
-                transform: rotate(0);
-                transition-duration: .5s;
-            }
+            
             
         }
     }
@@ -466,20 +470,16 @@ section {
         border-top-right-radius:10px ;
         border-bottom-right-radius:10px ;
         visibility: hidden;
-        -webkit-animation: slide-left 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) 10ms both;
-                animation: slide-left 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) 10ms both;
-        
             & .fa-check-circle{
-                
                 color :$color-white;
                
             }
-            & .fas {
-                margin: auto;
-                padding: auto;
-                transform: rotate(180deg);
-            }
         
+    }
+    & .fas {
+        margin: auto;
+        padding: auto;
+		
     }
     & strong{
         height: 18px;
