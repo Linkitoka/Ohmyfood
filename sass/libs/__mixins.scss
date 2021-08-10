@@ -25,19 +25,16 @@
        }
     
 }
-}
 @keyframes slide-left {
   0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateX(75px);
+            transform: translateX(75px);
   }
   100% {
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
-  .slide-left {
-	-webkit-animation: slide-left 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 50ms both;
-	        animation: slide-left 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 50ms both;
 }
-}
-  
+
+ 
+
