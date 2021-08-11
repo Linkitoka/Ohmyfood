@@ -16,9 +16,9 @@
     &:hover{
      
         color: $color-primary;
-        background-color: -webkit-gradient(linear, left top, left bottom, from($color-primary), to( $color-secondary));
+        background: -webkit-gradient(linear, left top, left bottom, from($color-primary), to( $color-secondary));
         -webkit-background-clip: text;
-        -webkit-text: transparent;
+        -webkit-text-fill-color: transparent;
         font-weight: 900;
         padding: 2px;
         transition: 1.5s;
