@@ -213,6 +213,7 @@ section {
         padding-left: 15px;  
         }
         & .fa-heart{
+            
             position:relative;
             left: 300px;
             width: 30px;
@@ -449,8 +450,6 @@ section {
                 -webkit-animation: slide-left 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) 50ms both;
                 animation: slide-left 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) 50ms both;
                 visibility: visible;
-                transition-duration: .5s;
-                    
                     & .fas{
                         -webkit-animation: rotate-90 0.8s ease-in-out both;
 	                    animation: rotate-90 0.8s ease-in-out both;
@@ -472,7 +471,6 @@ section {
         visibility: hidden;
             & .fa-check-circle{
                 color :$color-white;
-               
             }
         
     }

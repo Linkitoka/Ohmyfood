@@ -14,10 +14,11 @@
 }
 @mixin hover {
     &:hover{
-        color: $color-secondary;
-        background: -webkit-gradient(linear, left top, left bottom, from($color-primary), to( $color-secondary));
+     
+        color: $color-primary;
+        background-color: -webkit-gradient(linear, left top, left bottom, from($color-primary), to( $color-secondary));
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -webkit-text: transparent;
         font-weight: 900;
         padding: 2px;
         transition: 1.5s;
@@ -37,8 +38,8 @@
 }
 @keyframes rotate-90 {
   0% {
-    -webkit-transform: rotate(320deg);
-            transform: rotate(320deg);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
   100% {
     -webkit-transform: rotate(0deg);
