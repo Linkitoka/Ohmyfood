@@ -122,6 +122,24 @@ header h1 {
     transform: rotate(0deg);
   }
 }
+@keyframes appear {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    opacity: 10;
+  }
+}
 #logo {
   margin: 0;
   padding: 0;
@@ -502,6 +520,55 @@ section {
   padding-left: 20px;
   padding-top: 10px;
 }
+#bloc-menu #menu1 {
+  -webkit-animation: appear 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s both;
+  animation: appear 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s both;
+}
+#bloc-menu #menu2 {
+  -webkit-animation: appear 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s both;
+  animation: appear 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s both;
+  animation-delay: 0.8s;
+}
+#bloc-menu #menu3 {
+  -webkit-animation: appear 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s both;
+  animation: appear 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s both;
+  animation-delay: 1.4s;
+}
+#bloc-menu #menu4 {
+  -webkit-animation: appear 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s both;
+  animation: appear 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s both;
+  animation-delay: 1.7s;
+}
+#bloc-menu #menu5 {
+  -webkit-animation: appear 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s both;
+  animation: appear 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s both;
+  animation-delay: 2s;
+}
+#bloc-menu #menu6 {
+  -webkit-animation: appear 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s both;
+  animation: appear 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s both;
+  animation-delay: 2.3s;
+}
+#bloc-menu #menu7 {
+  -webkit-animation: appear 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s both;
+  animation: appear 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s both;
+  animation-delay: 2.6s;
+}
+#bloc-menu #menu8 {
+  -webkit-animation: appear 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s both;
+  animation: appear 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s both;
+  animation-delay: 2.9s;
+}
+#bloc-menu #menu9 {
+  -webkit-animation: appear 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s both;
+  animation: appear 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s both;
+  animation-delay: 3.2s;
+}
+#bloc-menu #menu10 {
+  -webkit-animation: appear 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s both;
+  animation: appear 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s both;
+  animation-delay: 3.5s;
+}
 @media screen and (max-width: 415px) {
   #bloc-menu {
     padding-left: 25px;
@@ -544,10 +611,6 @@ section {
     width: 10%;
     margin-bottom: 10px;
   }
-}
-
-#menu1 {
-  animation: opacity 1s both;
 }
 
 .menu {
