@@ -16,10 +16,8 @@
 @mixin hover {
     &:hover{
      
-        color: $color-primary;
-        background: -webkit-gradient(linear, left top, left bottom, from($color-primary), to( $color-secondary));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: from($color-primary), to( $color-secondary);
+        
         font-weight: 900;
         padding: 2px;
         transition: 1.5s;
