@@ -3,7 +3,8 @@
 }
 @mixin list-number {
     filter: invert(43%) sepia(39%) saturate(4338%) hue-rotate(241deg) brightness(90%) contrast(91%);
-    margin-left: -80px;
+    position: absolute;
+    left: -20px;
 }
 @mixin color-heart {
     font-weight: 900;
@@ -77,42 +78,43 @@
   & #menu3{
       -webkit-animation: appear 0.5s cubic-bezier(0.600, -0.280, 0.735, 0.045) 0.5s both;
       animation: appear 0.5s cubic-bezier(0.600, -0.280, 0.735, 0.045) 0.5s both;
-      animation-delay: 1.4s;  
+      animation-delay: 1.1s;  
   }
   & #menu4{
       -webkit-animation: appear 0.5s cubic-bezier(0.600, -0.280, 0.735, 0.045) 0.5s both;
       animation: appear 0.5s cubic-bezier(0.600, -0.280, 0.735, 0.045) 0.5s both; 
-      animation-delay: 1.7s; 
+      animation-delay: 1.4s; 
   }
   & #menu5{
       -webkit-animation: appear 0.5s cubic-bezier(0.600, -0.280, 0.735, 0.045) 0.5s both;
       animation: appear 0.5s cubic-bezier(0.600, -0.280, 0.735, 0.045) 0.5s both;
-      animation-delay: 2s;
+      animation-delay: 1.7s;
   }
   & #menu6{
       -webkit-animation: appear 0.5s cubic-bezier(0.600, -0.280, 0.735, 0.045) 0.5s both;
       animation: appear 0.5s cubic-bezier(0.600, -0.280, 0.735, 0.045) 0.5s both; 
-      animation-delay: 2.3s; 
+      animation-delay: 2s; 
   }
   & #menu7{
       -webkit-animation: appear 0.5s cubic-bezier(0.600, -0.280, 0.735, 0.045) 0.5s both;
       animation: appear 0.5s cubic-bezier(0.600, -0.280, 0.735, 0.045) 0.5s both;
-      animation-delay: 2.6s;
+      animation-delay: 2.3s;
   }
   & #menu8{
       -webkit-animation: appear 0.5s cubic-bezier(0.600, -0.280, 0.735, 0.045) 0.5s both;
       animation: appear 0.5s cubic-bezier(0.600, -0.280, 0.735, 0.045) 0.5s both;
-      animation-delay: 2.9s;
+      animation-delay: 2.6s;
   }
   & #menu9{
       -webkit-animation: appear 0.5s cubic-bezier(0.600, -0.280, 0.735, 0.045) 0.5s both;
       animation: appear 0.5s cubic-bezier(0.600, -0.280, 0.735, 0.045) 0.5s both;
-      animation-delay: 3.2s; 
+      animation-delay: 2.9s; 
   }
   & #menu10{
     -webkit-animation: appear 0.5s cubic-bezier(0.600, -0.280, 0.735, 0.045) 0.5s both;
     animation: appear 0.5s cubic-bezier(0.600, -0.280, 0.735, 0.045) 0.5s both;
-    animation-delay: 3.5s; 
+    animation-delay: 3.2s; 
   }
 }
+
 
