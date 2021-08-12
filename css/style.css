@@ -140,6 +140,26 @@ header h1 {
     opacity: 10;
   }
 }
+@keyframes opacity-heart {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.3;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 #logo {
   margin: 0;
   padding: 0;
@@ -199,6 +219,7 @@ header h1 {
 }
 
 .btn {
+  cursor: pointer;
   font-family: "roboto-regular", sans-serif;
   font-size: 100%;
   color: #FFF;
@@ -365,11 +386,15 @@ section {
   }
 }
 .banner-meal .fa-heart:hover {
-  color: from(#9356DC), to(#FF79DA);
+  color: #9356DC;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 900;
-  padding: 2px;
-  transition: 1.5s;
-  -webkit-transition: 1.5s;
+  -webkit-animation-name: opacity-heart;
+  -webkit-animation-duration: 1s;
+  animation-name: opacity-heart;
+  animation-duration: 1s;
 }
 
 .strip__footer {
@@ -584,6 +609,17 @@ section {
     padding-top: 10px;
     font-size: 1.7rem;
   }
+}
+#bloc-menu .fa-heart:hover {
+  color: #9356DC;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  -webkit-animation-name: opacity-heart;
+  -webkit-animation-duration: 1s;
+  animation-name: opacity-heart;
+  animation-duration: 1s;
 }
 @media screen and (max-width: 1000px) {
   #bloc-menu .fa-heart {

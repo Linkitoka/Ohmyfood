@@ -65,6 +65,7 @@
 }
 
 .btn {
+    cursor: pointer;
     font-family: 'roboto-regular', sans-serif;
     font-size: 100%;
     color: $color-white;
@@ -370,6 +371,7 @@ section {
     padding-left: 20px;
     padding-top: 10px;
     @include menuappear;
+    
     @media screen and (max-width: $sizephone){
         padding-left: 25px;
         max-width: 414px;
@@ -383,6 +385,7 @@ section {
             }
         } 
         & .fa-heart{
+            @include hover;
             @media screen and (max-width: $sizephone){
                 margin-left: 55px;
             }
