@@ -207,6 +207,11 @@ header h1 {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
+@media screen and (max-width: 1000px) {
+  .loader p {
+    font-size: 3rem;
+  }
+}
 
 #logo {
   margin: 0;
@@ -655,7 +660,7 @@ section {
   #bloc-menu h3 {
     text-align: start;
     padding-top: 10px;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 }
 #bloc-menu .fa-heart:hover {
@@ -671,7 +676,8 @@ section {
 }
 @media screen and (max-width: 1000px) {
   #bloc-menu .fa-heart {
-    margin-left: 55px;
+    position: absolute;
+    right: 35px;
   }
 }
 #bloc-menu h4 {
