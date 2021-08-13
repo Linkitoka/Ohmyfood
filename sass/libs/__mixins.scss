@@ -6,12 +6,11 @@
     position: absolute;
     left: -20px;
 }
-@mixin color-heart {
-    font-weight: 900;
-    display: flex;
-    background: -webkit-linear-gradient($color-primary, $color-secondary);
-    -webkit-text-fill-color: transparent;
-    
+@mixin btn-hover{
+    &:hover{
+      box-shadow: inset 1px 2px 2px darken($color-white, 60%);
+      background: linear-gradient($color-primary,$color-secondary);
+    }
 }
 @mixin hover {
     &:hover{
