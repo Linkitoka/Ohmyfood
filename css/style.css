@@ -655,6 +655,8 @@ section {
 }
 #bloc-menu h3 {
   text-align: center;
+  letter-spacing: 1.5px;
+  font-size: 1.7rem;
 }
 @media screen and (max-width: 1000px) {
   #bloc-menu h3 {
