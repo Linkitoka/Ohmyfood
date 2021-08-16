@@ -777,6 +777,9 @@ section {
 }
 .menu strong {
   height: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu p {
   margin: 0;
