@@ -411,8 +411,7 @@ section {
         max-width: 414px;
     }
         & h3{
-        text-align: center; 
-        letter-spacing: 1.5px;
+        text-align: center;
         font-size: 1.7rem;
             @media screen and (max-width: $sizephone){
                 text-align: start;
