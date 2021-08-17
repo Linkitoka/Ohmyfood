@@ -155,10 +155,12 @@ ul{
 }
 
 section {
-    margin: 0;
-    padding: 0;
     width: 100%;
-    background-color: darken($color-white, 5%);
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 20%, rgba(242,242,242,1) 50%, rgba(242,242,242,1) 80%, rgba(255,255,255,1) 100%);
+        @media screen and (max-width: $sizephone){
+            background: darken($color-white, 5%);
+        }
     
     
 }
