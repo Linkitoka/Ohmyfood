@@ -335,9 +335,12 @@ section {
                         color: $color-tertiary; 
                     }
                     @media screen and (max-width: $sizephone){
-                        
                         padding: 0;
-                        }
+                    }
+                    @media screen and (max-width: $sizetablet) {
+                        padding-right: 40px; 
+                        padding-left: 0;
+                    }
                 } 
 }
 /*-------------------------*/
@@ -360,7 +363,7 @@ section {
         @media screen and (max-width: $sizephone){
             height: 60px;
             & img{
-                width: 45%;
+                width: 35%;
             }
         }
         & a{
@@ -381,6 +384,10 @@ section {
             width: 100%;
             height: 250px;
         }
+        @media screen and  (max-width: $sizetablet){
+            width: 100%;
+            height: 250px;
+        }
         & img{
             position: absolute;
             width: 1400px;
@@ -389,6 +396,10 @@ section {
             z-index: 0;
             overflow: hidden;
             @media screen and (max-width: $sizephone){
+                width: 100%;
+                height: 50%;
+            }
+            @media screen and  (max-width: $sizetablet){
                 width: 100%;
                 height: 50%;
             }
@@ -410,7 +421,7 @@ section {
     
     @media screen and (max-width: $sizephone){
         padding-left: 25px;
-        max-width: 414px;
+        justify-content: center;
     }
         & h3{
         text-align: center;
@@ -563,5 +574,4 @@ section {
     flex-direction: column;
     height: 150px;
     background-color: #f2f2f2;
-
 }
