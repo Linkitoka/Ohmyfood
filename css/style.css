@@ -226,16 +226,12 @@ header h1 {
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
-}
-#logo img {
-  width: 25%;
+  font-family: "shrinkhand", sans-serif;
+  font-size: 3.5rem;
 }
 @media screen and (max-width: 688px) {
   #logo {
-    height: 60px;
-  }
-  #logo img {
-    width: 25%;
+    font-size: 2rem;
   }
 }
 
@@ -555,16 +551,12 @@ section {
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
-}
-.logo_1 img {
-  width: 25%;
+  font-family: "shrinkhand", sans-serif;
+  font-size: 3.5rem;
 }
 @media screen and (max-width: 688px) {
   .logo_1 {
-    height: 60px;
-  }
-  .logo_1 img {
-    width: 35%;
+    font-size: 2rem;
   }
 }
 .logo_1 a {
@@ -577,6 +569,9 @@ section {
   .logo_1 a {
     margin-left: 0;
   }
+}
+.logo_1 .fas {
+  font-size: 1.5rem;
 }
 
 .background {

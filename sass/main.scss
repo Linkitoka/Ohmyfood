@@ -48,15 +48,10 @@
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
-    
-        & img{
-            width: 25%;
-        }
+    font-family: 'shrinkhand', sans-serif;
+    font-size: 3.5rem;
         @media screen and (max-width: $sizephone){
-            height: 60px;
-            & img{
-                width: 25%;
-            }
+            font-size: 2rem;
         }    
 }
 
@@ -356,15 +351,10 @@ section {
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
-    
-        & img{
-            width: 25%;
-        }
+    font-family: 'shrinkhand',sans-serif;
+    font-size: 3.5rem;
         @media screen and (max-width: $sizephone){
-            height: 60px;
-            & img{
-                width: 35%;
-            }
+            font-size: 2rem;
         }
         & a{
             position: absolute;
@@ -374,7 +364,10 @@ section {
             @media screen and (max-width: $sizephone){
                 margin-left: 0;
             }
-        }    
+        } 
+        & .fas{
+            font-size: 1.5rem;
+        }   
 }
 .background{
     width: 1400px;
